@@ -2,12 +2,14 @@ import { type FC } from 'react';
 import { Box, Flex, Heading, Text, Button, Link } from '@chakra-ui/react';
 
 const Hero: FC = () => {
+  const bgImage = `url('${import.meta.env.BASE_URL}1712922303256.jpg')`;
+
   return (
     <Box
       as="section"
       position="relative"
       height={{ base: '500px', md: '650px' }}
-      backgroundImage="url('/1712922303256.jpg')"
+      backgroundImage={bgImage}
       backgroundSize={{ base: 'cover', md: 'contain' }}
       backgroundPosition="center"
       backgroundRepeat="no-repeat"

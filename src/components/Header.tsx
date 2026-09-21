@@ -2,6 +2,8 @@ import { type FC } from 'react';
 import { Box, Flex, Link, Container, Text, Image } from '@chakra-ui/react';
 
 const Header: FC = () => {
+  const logoSrc = `${import.meta.env.BASE_URL}Logo_Color.png`;
+
   return (
     <Box
       as="header"
@@ -26,7 +28,7 @@ const Header: FC = () => {
               justifyContent="center"
               overflow="hidden"
             >
-              <Image src="/Logo_Color.png" alt="AMETHYST Logo" w="100%" h="100%" objectFit="contain" />
+              <Image src={logoSrc} alt="AMETHYST Logo" w="100%" h="100%" objectFit="contain" />
             </Box>
             <Box>
               <Text fontSize="1.3rem" fontWeight="bold" color="#aa00aa" letterSpacing="tight">

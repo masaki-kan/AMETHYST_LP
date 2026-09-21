@@ -3,6 +3,8 @@ import { Box, Container, Heading, Text, Grid, Image } from '@chakra-ui/react';
 import ScrollFadeIn from './ScrollFadeIn';
 
 const About: FC = () => {
+  const aboutImageSrc = `${import.meta.env.BASE_URL}19-03-15-15-12-01-081_deco.jpg`;
+
   return (
     <Box as="section" id="about" py={{ base: 12, md: 20 }} px={8} bg="gray.50">
       <Container maxW="full">
@@ -48,7 +50,7 @@ const About: FC = () => {
             </Box>
             <Box>
               <Image
-                src="/19-03-15-15-12-01-081_deco.jpg"
+                src={aboutImageSrc}
                 alt="会社紹介画像"
                 borderRadius="10px"
                 boxShadow="0 10px 30px rgba(0, 0, 0, 0.1)"
