@@ -1,1 +1,0 @@
-# AMETHYST_LP
