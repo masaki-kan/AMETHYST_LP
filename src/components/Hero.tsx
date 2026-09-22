@@ -2,7 +2,7 @@ import { type FC } from 'react';
 import { Box, Flex, Heading, Text, Button, Link } from '@chakra-ui/react';
 
 const Hero: FC = () => {
-  const bgImage = `url('${import.meta.env.BASE_URL}1712922303256.jpg')`;
+  const bgImage = `url('${import.meta.env.BASE_URL}lp_main.png')`;
 
   return (
     <Box
